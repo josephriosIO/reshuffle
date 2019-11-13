@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { players } from '../../backend/backend';
 import Card from './Card';
 import PropTypes from 'prop-types';
+import './Cards.css';
 
 const Cards = props => {
   const [pros, setPros] = useState(undefined);
@@ -17,15 +18,18 @@ const Cards = props => {
   }, []);
 
   return (
-    <div>
-      {pros
-        ? pros.map(pros => (
-            <div>
-              <Card pros={pros} />
-            </div>
-          ))
-        : null}
-    </div>
+    <>
+      <h1>CDL Pro Players</h1>
+      <div className='cards'>
+        {pros
+          ? pros.map(pros => (
+              <div>
+                <Card id={pros.id} pros={pros} />
+              </div>
+            ))
+          : null}
+      </div>
+    </>
   );
 };
 

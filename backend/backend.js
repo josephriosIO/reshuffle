@@ -1,7 +1,7 @@
 /*
   import { get, update, remove, Q, find } from '@reshuffle/db';
  */
-const users = [{ name: 'Scumpi' }, { name: 'Nadeshot' }];
+import users from './CDLProPlayers';
 
 /* @expose */
 export async function players() {

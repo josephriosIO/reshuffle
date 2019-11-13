@@ -1,0 +1,16 @@
+.card-container {
+  background: red;
+  font-size: 30px;
+  font-weight: bold;
+  width: 400px;
+  height: 450px;
+  margin: 80px auto;
+  border-radius: 10px;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  border-radius: 10px;
+  widht: 100%;
+}
