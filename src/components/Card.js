@@ -3,13 +3,24 @@ import PropTypes from 'prop-types';
 import './Card.css';
 
 const Card = props => {
-  const { pros } = props;
+  const { pros, addPros } = props;
+  const teamCreator = pro => {
+    addPros(pro);
+
+    return;
+  };
   return (
-    <div className='card-container'>
+    <div
+      onClick={() => teamCreator(pros)}
+      style={{ background: pros.color }}
+      className='card-container'
+    >
       <div className='card'>
-        <h1>{pros.name}</h1>
-        <h1>Role: {pros.role}</h1>
-        <img src={pros.imageUrl} alt={pros.name}></img>
+        <img id='pro-image' src={pros.imageUrl} alt={pros.name}></img>
+        <div>
+          <h2>{pros.name}</h2>
+          <h2>Role: {pros.role}</h2>
+        </div>
       </div>
     </div>
   );

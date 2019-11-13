@@ -7,27 +7,52 @@ import './Cards.css';
 
 const Cards = props => {
   const [pros, setPros] = useState(undefined);
+  const [createdTeam, setCreatedTeam] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       const users = await players();
-      console.log(users);
       setPros(users);
     };
     fetchData();
   }, []);
 
+  const addPros = pro => {
+    const ids = createdTeam.map(pros => pros.id);
+
+    if (ids.includes(pro.id)) {
+      return;
+    }
+
+    setCreatedTeam([...createdTeam, pro]);
+  };
+
   return (
     <>
       <h1>CDL Pro Players</h1>
-      <div className='cards'>
-        {pros
-          ? pros.map(pros => (
-              <div>
-                <Card id={pros.id} pros={pros} />
-              </div>
-            ))
-          : null}
+      <div>
+        <h1>Created Team</h1>
+        {createdTeam.length >= 1 ? (
+          createdTeam.map(pros => (
+            <div key={pros.id}>
+              <Card pros={pros} />
+            </div>
+          ))
+        ) : (
+          <div>Please Select Pros to create your team.</div>
+        )}
+      </div>
+      <div>
+        <h1>List of Pros</h1>
+        <div className='cards'>
+          {pros
+            ? pros.map(pros => (
+                <div key={pros.id}>
+                  <Card pros={pros} addPros={addPros} />
+                </div>
+              ))
+            : null}
+        </div>
       </div>
     </>
   );
