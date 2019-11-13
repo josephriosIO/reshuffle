@@ -1,0 +1,14 @@
+.bar {
+  background: grey;
+  width: 90%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.bar #pro-image {
+  width: 220px;
+  height: 230px;
+}

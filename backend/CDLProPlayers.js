@@ -40,6 +40,84 @@ const users = [
       'https://www.esportspedia.com/cod/thumb.php?f=FormaL_Chicago_2019.png&width=300',
     color: 'green',
   },
+  {
+    id: 5,
+    name: 'Clayster',
+    role: 'AR',
+    imageUrl:
+      'https://www.esportspedia.com/cod/thumb.php?f=Clayster2019.png&width=300',
+    color: 'yellow',
+  },
+  {
+    id: 6,
+    name: 'GodRX',
+    role: 'AR',
+    imageUrl:
+      'https://www.esportspedia.com/cod/thumb.php?f=GodRX.jpg&width=300',
+    color: 'purple',
+  },
+  {
+    id: 7,
+    name: 'Simp',
+    role: 'Sub',
+    imageUrl:
+      'https://www.esportspedia.com/cod/thumb.php?f=Simp_Pic_.jpg&width=300',
+    color: 'yellow',
+  },
+  {
+    id: 8,
+    name: 'ABeZy',
+    role: 'AR',
+    imageUrl: 'https://www.esportspedia.com/cod/images/6/63/ABeZy.jpg',
+    color: 'yellow',
+  },
+  {
+    id: 9,
+    name: 'Prestinni',
+    role: 'AR',
+    imageUrl: 'https://www.esportspedia.com/cod/images/2/2e/Prestinni.png',
+    color: 'yellow',
+  },
+  {
+    id: 10,
+    name: 'Arcitys',
+    role: 'Flex',
+    imageUrl:
+      'https://www.esportspedia.com/cod/thumb.php?f=Arcitys_Chicago_2019.png&width=300',
+    color: 'green',
+  },
+  {
+    id: 11,
+    name: 'JKap',
+    role: 'AR',
+    imageUrl:
+      'https://www.esportspedia.com/cod/thumb.php?f=JKap_OGLA_2019.png&width=300',
+    color: 'green',
+  },
+  {
+    id: 12,
+    name: 'Attach',
+    role: 'Sub',
+    imageUrl:
+      'https://www.esportspedia.com/cod/images/3/30/FaZe_Attach_2015_Winter.png',
+    color: 'red',
+  },
+  {
+    id: 13,
+    name: 'ZooMaa',
+    role: 'AR',
+    imageUrl:
+      'https://www.esportspedia.com/cod/images/2/26/FaZe_ZooMaa_2015_Winter.png',
+    color: 'red',
+  },
+  {
+    id: 14,
+    name: 'Temp',
+    role: 'Flex',
+    imageUrl:
+      'https://www.esportspedia.com/cod/thumb.php?f=Temp_Splyce.png&width=300',
+    color: 'yellow',
+  },
 ];
 
 export default users;

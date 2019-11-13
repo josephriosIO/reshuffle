@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './Card.css';
 
 const Card = props => {
@@ -9,21 +8,22 @@ const Card = props => {
 
     return;
   };
-  return (
+  return pros.map(pro => (
     <div
-      onClick={() => teamCreator(pros)}
-      style={{ background: pros.color }}
+      key={pro.id}
+      onClick={() => teamCreator(pro)}
+      style={{ background: pro.color }}
       className='card-container'
     >
       <div className='card'>
-        <img id='pro-image' src={pros.imageUrl} alt={pros.name}></img>
+        <img id='pro-image' src={pro.imageUrl} alt={pro.name}></img>
         <div>
-          <h2>{pros.name}</h2>
-          <h2>Role: {pros.role}</h2>
+          <h2>{pro.name}</h2>
+          <h2>Role: {pro.role}</h2>
         </div>
       </div>
     </div>
-  );
+  ));
 };
 
 export default Card;
