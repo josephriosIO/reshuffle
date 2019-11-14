@@ -11,15 +11,15 @@ export async function players() {
 
 /* @expose */
 export async function getTeams() {
-  return (await get('tests')) || [];
+  return (await get('CDLteamsCreated')) || [];
 }
 
 /* @expose */
 export async function addTeam(team) {
-  const teams = await update('tests', (teams = []) => {
+  const teams = await update('CDLteamsCreated', (teams = []) => {
     const allCreatedTeams = [...teams, team];
 
     return allCreatedTeams;
   });
-  return { tests: [...teams] };
+  return { CDLteamsCreated: [...teams] };
 }

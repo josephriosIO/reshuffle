@@ -1,6 +1,57 @@
+.created-teams {
+  display: flex;
+  align-items: center;
+}
+
+.pro-list {
+  display: flex;
+  align-items: center;
+}
+
+.created-teams #save {
+  padding: 0.35em 1.2em;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 0.12em;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+  margin-left: 30px;
+}
+
+.created-teams #save:hover {
+  color: #fff;
+  background-color: black;
+}
+
 .cards {
   display: flex;
   justify-content: space-around;
   flex-flow: row;
   flex-wrap: wrap;
+}
+
+.pro-list .input[type='search'] {
+  margin-left: 30px;
+  padding: 0.35em 1.2em;
+  border: 1px solid black;
+  border-radius: 0.12em;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+.pro-list .input[type='search']:focus {
+  height: 20px;
+  width: 50%;
 }

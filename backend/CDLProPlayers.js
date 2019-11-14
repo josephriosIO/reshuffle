@@ -118,6 +118,30 @@ const users = [
       'https://www.esportspedia.com/cod/thumb.php?f=Temp_Splyce.png&width=300',
     color: 'yellow',
   },
+  {
+    id: 15,
+    name: 'Huke',
+    role: 'Sub',
+    imageUrl:
+      'https://www.esportspedia.com/cod/thumb.php?f=Huke2019.png&width=300',
+    color: 'darkBlue',
+  },
+  {
+    id: 16,
+    name: 'iLLeY',
+    role: 'Flex',
+    imageUrl:
+      'https://www.esportspedia.com/cod/thumb.php?f=ILLeY.png&width=300',
+    color: 'orange',
+  },
+  {
+    id: 17,
+    name: 'Shotzzy',
+    role: 'Sub',
+    imageUrl:
+      'https://www.esportspedia.com/cod/thumb.php?f=Shotzzy2019.png&width=300',
+    color: 'yellow',
+  },
 ];
 
 export default users;

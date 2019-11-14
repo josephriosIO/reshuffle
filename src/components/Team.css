@@ -1,5 +1,10 @@
+.team-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
 .bar {
-  background: grey;
+  background-image: linear-gradient(white 30%, grey);
   width: 90%;
   height: 500px;
   display: flex;

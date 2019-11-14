@@ -6,16 +6,18 @@ import './App.css';
 
 function App() {
   return (
-    <div>
-      <div>
-        <Link to='/'>
-          <h1>CDL Pro Players</h1>
+    <>
+      <div className='nav-bar'>
+        <Link id='home' to='/'>
+          CDL Pro Players
         </Link>
-        <Link to='/teams'>Created CDL Teams</Link>
+        <Link id='teams' to='/teams'>
+          Created CDL Teams
+        </Link>
       </div>
       <Route exact path='/' component={Cards} />
       <Route exact path='/teams' component={UsersCreatedTeams} />
-    </div>
+    </>
   );
 }
 
