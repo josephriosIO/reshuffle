@@ -142,6 +142,52 @@ const users = [
       'https://www.esportspedia.com/cod/thumb.php?f=Shotzzy2019.png&width=300',
     color: 'yellow',
   },
+  {
+    id: 18,
+    name: 'Dashy',
+    role: 'Sub',
+    imageUrl:
+      'https://www.esportspedia.com/cod/images/5/5a/Dashy_OGLA_2019.png',
+    color: 'green',
+  },
+  {
+    id: 19,
+    name: 'Kenny',
+    role: 'Flex',
+    imageUrl:
+      'https://www.esportspedia.com/cod/images/f/fa/Kenny_OGLA_2019.png',
+    color: 'red',
+  },
+  {
+    id: 20,
+    name: 'TJHaLy',
+    role: 'Sub',
+    imageUrl:
+      'https://www.esportspedia.com/cod/images/c/c6/TJHaLy_OGLA_2019.png',
+    color: 'green',
+  },
+  {
+    id: 21,
+    name: 'SlasheR',
+    role: 'AR',
+    imageUrl:
+      'https://www.esportspedia.com/cod/images/0/04/SlasheR_OGLA_2019.png',
+    color: 'blue',
+  },
+  {
+    id: 22,
+    name: 'Aches',
+    role: 'Flex',
+    imageUrl: 'https://www.esportspedia.com/cod/images/8/86/ACHES-ENVY.png',
+    color: 'black',
+  },
+  {
+    id: 23,
+    name: 'Saints',
+    role: 'Sub',
+    imageUrl: 'https://www.esportspedia.com/cod/images/e/e5/LG_Saints.png',
+    color: 'orange',
+  },
 ];
 
 export default users;

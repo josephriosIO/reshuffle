@@ -7,6 +7,7 @@ import './App.css';
 function App() {
   return (
     <>
+      {/*TODO create new component just for navbar*/}
       <div className='nav-bar'>
         <Link id='home' to='/'>
           CDL Pro Players

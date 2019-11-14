@@ -13,6 +13,24 @@
   margin-bottom: 15px;
 }
 
+@media only screen and (max-width: 600px) {
+  .team-container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+  }
+  .bar {
+    background-image: linear-gradient(white 30%, grey);
+    width: 90%;
+    height: 500px;
+    flex-flow: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+}
+
 .bar #pro-image {
   width: 220px;
   height: 230px;

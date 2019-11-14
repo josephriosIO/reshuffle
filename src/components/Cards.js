@@ -28,7 +28,7 @@ const Cards = props => {
       setTimeout(() => {
         setAlerts(false);
       }, 5000);
-      return console.log('error');
+      return;
     }
 
     setErrorMsg('Team Saved');
