@@ -52,6 +52,15 @@ const Cards = props => {
     setFilter(pro);
   };
 
+  const removePro = pro => {
+    var index = createdTeam.indexOf(pro);
+    if (index > -1) {
+      createdTeam.splice(index, 1);
+    }
+    setCreatedTeam([...createdTeam]);
+    window.scrollTo(0, 0);
+  };
+
   const addPros = pro => {
     const ids = createdTeam.map(pros => pros.id);
 
@@ -92,13 +101,13 @@ const Cards = props => {
         ) : null}
         <div className='created-teams'>
           <h1>Created Team</h1>
-          <a id='save' onClick={onSubmit}>
+          <button id='save' onClick={onSubmit}>
             Save Team
-          </a>
+          </button>
         </div>
         <div className='cards'>
           {createdTeam.length >= 1 ? (
-            <Card pros={createdTeam} />
+            <Card pros={createdTeam} addPros={removePro} />
           ) : (
             <div>Please Select Pros to create your team.</div>
           )}

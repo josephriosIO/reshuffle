@@ -7,6 +7,7 @@ const CardInfo = props => {
     <div className={`card `}>
       <div className='card-header'>
         <img
+          alt='CDL Logo'
           id='cdl-logo'
           src='https://venturebeat.com/wp-content/uploads/2019/10/cod-league-2.jpg?fit=1486%2C824&strip=all'
         />

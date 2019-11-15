@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import CardInfo from './CardInfo';
 import './Card.css';
 
 const Card = props => {
-  const [selected, setSelected] = useState(false);
   const { pros, addPros } = props;
   const teamCreator = pro => {
-    setSelected(true);
     if (addPros === undefined) {
       return;
     }

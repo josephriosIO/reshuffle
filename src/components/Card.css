@@ -19,7 +19,7 @@
 }
 
 .card:hover {
-  border: 5px black solid;
+  border: 3px black solid;
 }
 
 .selected {
